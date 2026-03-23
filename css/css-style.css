@@ -395,10 +395,8 @@ figure {
   top: 0;
   left: 0;
   right: 0;
-  background: #221b17;
-/* background: linear-gradient(0deg, #40513B 0%, #1D546D 100%); */
-
-
+  background: rgb(70, 57, 35);
+  background: linear-gradient(0deg, rgb(45, 37, 20) 0%, rgba(9, 7, 3, 0) 100%);
 }
 
 .fh5co-cover>.fh5co-container {
@@ -1195,8 +1193,8 @@ form label {
   }
 }
 
-.fh5co-section-gray {
-  background: #c1a771
+.fh5co-section-brown {
+  background: #443627;
 }
 
 .couple-wrap {
@@ -2161,6 +2159,6 @@ form label {
 
 /*# sourceMappingURL=style.css.map */
 .color-coklat {
-  color: #c1a771;
+  color: #443627;
   font-size: 40px;
 }
