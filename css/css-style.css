@@ -117,7 +117,7 @@ h4,
 h5,
 h6,
 figure {
-  color: #304058;
+  color: #221b17;
   font-family: "Serif", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -281,7 +281,7 @@ figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -395,7 +395,7 @@ figure {
   top: 0;
   left: 0;
   right: 0;
-  background: #101826;
+  background: #221b17;
 /* background: linear-gradient(0deg, #40513B 0%, #1D546D 100%); */
 
 
@@ -488,7 +488,7 @@ figure {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(5, 55, 66, 0.8);
+  background: rgba(37, 26, 18, 0.8);
 }
 
 @media screen and (max-width: 768px) {
@@ -909,14 +909,14 @@ figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   color: #F14E95;
   padding-left: 10px;
   padding-right: 10px;
@@ -1196,7 +1196,7 @@ form label {
 }
 
 .fh5co-section-gray {
-  background: rgba(0, 0, 0, 0.04);
+  background: #c1a771
 }
 
 .couple-wrap {
@@ -1441,7 +1441,7 @@ form label {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   width: 100px;
   height: 100px;
 }
@@ -1870,17 +1870,17 @@ form label {
 
 /* Button 4 */
 .btn-4 {
-  background: #34495e;
-  color: #fff;
+  background: #221b17;
+  color: #c1a771;
   border-radius: 10px;
 }
 
 .btn-4:hover {
-  background: #2c3e50;
+  background: #443627;
 }
 
 .btn-4:active {
-  background: #2c3e50;
+  background: #443627;
   top: 2px;
 }
 
@@ -2160,7 +2160,7 @@ form label {
 
 
 /*# sourceMappingURL=style.css.map */
-.color-putih {
-  color: white;
+.color-coklat {
+  color: #c1a771;
   font-size: 40px;
 }
