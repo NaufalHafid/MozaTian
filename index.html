@@ -1,520 +1,834 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Wedding Invitation - Moza &amp; Tian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
+    <meta property="og:image" content="img/kita.png" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:title" content="Wedding Invitation - Moza &amp; Tian " />
+    <meta property="og:description" content="Hello ! Kamu Di Undang.." />
+    <meta property="og:type" content="article" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="icon" href="img/favicon.png" />
 
-	<meta charset="utf-8">
-	<title>Wedding Invitation - Moza &amp; Tian </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sacramento"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-	<meta property="og:image" content="img/kita.png">
-	<meta property="og:image:width" content="300">
-	<meta property="og:image:height" content="300">
-	<meta property="og:title" content="Wedding Invitation - Moza &amp; Tian ">
-	<meta property="og:description" content="Hello ! Kamu Di Undang..">
-	<meta property="og:type" content="article">
-	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-	<meta http-equiv="Pragma" content="no-cache">
-	<meta http-equiv="Expires" content="0">
-	<link rel="icon" href="img/favicon.png">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/css-animate.css" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/css-icomoon.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/css-bootstrap.css" />
 
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/css-magnific-popup.css" />
 
-	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700" rel="stylesheet"
-		type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/css-owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/css-owl.theme.default.min.css" />
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--lightbox-->
+    <link href="css/lightbox.css" rel="stylesheet" />
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/css-animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/css-icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/css-bootstrap.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/css-style.css" />
 
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/css-magnific-popup.css">
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="css/material-components-web.css" rel="stylesheet" />
 
-	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/css-owl.carousel.min.css">
-	<link rel="stylesheet" href="css/css-owl.theme.default.min.css">
+    <!-- Modernizr JS -->
+    <script src="js/js-modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
 
-	<!--lightbox-->
-	<link href="css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ket2.css" />
+    <link rel="stylesheet" href="css/ket.css" />
+  </head>
+  <body>
+    <div id="loader" class="fh5co-loader"></div>
+    <!-- SPLASHSCREEN -->
+    <div id="splashscreen">
+      <div class="splashscreen-bg"></div>
+      <div class="tengah">
+        <p>The Wedding Of</p>
+        <h1 style="font-size: 80px; color: #c1a771; margin-top: -30px">
+          Moza &amp; Tian
+        </h1>
+        <p style="margin-top: 30px">Kepada Yth.<br /></p>
+        <p id="to"></p>
+        <a href="#" onclick="return OpenInvitation();">
+          <button
+            class="btn-depan btn-4 btn-sep-depan icon-send popup1_open"
+            data-popup-ordinal="0"
+            id="open_92089009"
+          >
+            BUKA
+          </button>
+        </a>
+      </div>
+    </div>
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/css-style.css">
+    <!-- END SPLASHSCREEN -->
 
+    <!-- ============== MUSIK =============== -->
+    <audio loop="true" src="musik/m2.mp3" id="audio"></audio>
+    <!-- ============== MUSIK =============== -->
 
-	<!-- icon -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="css/material-components-web.css" rel="stylesheet">
+    <div style="display: none" id="page">
+      <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"
+        ><i></i
+      ></a>
+      <div id="fh5co-offcanvas"></div>
+      <header
+        id="fh5co-header"
+        class="fh5co-cover"
+        role="banner"
+        data-stellar-background-ratio="0.5"
+        style="background-position: -25px -25px"
+      >
+        <div id="fh5co-header">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 text-center">
+                <div class="display-t">
+                  <div
+                    class="display-tc animate-box fadeIn animated-fast"
+                    data-animate-effect="fadeIn"
+                  >
+                    <div style="color: #c1a771; margin-top: 250px">
+                      <!-- <p>The Wedding Of</p> -->
+                      <br />
+                      <br />
+                      <br />
+                      <h1 style="margin-top: -40px">Moza &amp; Tian</h1>
+                      <p><span> 30 - 03 - 2026</span></p>
+                      <p>
+                        <a href="#fh5co-couple" class="icon-scroll"></a>
+                      </p>
+                    </div>
+                    <div style="clear: both">
+                      <br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
 
+      <div id="fh5co-couple" style="background-color: #443627; min-height: 0px">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-8 col-md-offset-2 text-center animate-box fadeInUp animated-fast"
+            >
+              <h1 style="color: #c1a771; font-size: 50px">Hallo!</h1>
+              <p>
+                <i style="white-space: pre-line"
+                  >Assalamu'alaikum warahmatullahi wabarakatuh Izinkan kami
+                  mengundang sekaligus mengharapkan doa restu dari bapak/ibu dan
+                  rekan-rekan dalam acara pernikahan kami</i
+                >
+              </p>
+            </div>
+          </div>
+          <div class="couple-wrap animate-box fadeInUp animated-fast">
+            <div class="couple-half">
+              <div class="groom">
+                <img
+                  src="img/Moza.jpg?nocache=1440"
+                  alt="groom"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="desc-groom">
+                <h3 style="color: #c1a771">Moza Hasmita Adler</h3>
+                <!-- untuk deskripsi mempelai -->
+                <p>
+                  <i style="font-size: 12px">Putri dari :</i>
+                  <br />
+                  Bapak Sony Adler &amp; Ibu Himelda (Almh)
+                </p>
+              </div>
+            </div>
+            <p class="heart text-center">
+              <i class="icon-heart2" style="color: #221b17"></i>
+            </p>
+            <div class="couple-half">
+              <div class="bride">
+                <img
+                  src="img/Tian.jpg?nocache=1440"
+                  alt="groom"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="desc-bride">
+                <h3 style="color: #c1a771">Agustian Tito</h3>
+                <!-- untuk deskripsi mempelai -->
+                <p>
+                  <i style="font-size: 12px">Putra dari :</i>
+                  <br />
+                  Bapak Syafrizal &amp; Ibu Eva Nandira
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12" style="text-align: center; font-size: 12px">
+            <br /><i style="white-space: pre-line"
+              >'' Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+              untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung
+              dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa
+              kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar
+              terdapat tanda-tanda bagi kaum yang berfikir. '' QS Ar-Rum : 21</i
+            >
+          </div>
+        </div>
+      </div>
 
-	<!-- Modernizr JS -->
-	<script src="js/js-modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-
-	<link rel="stylesheet" href="css/ket2.css">
-	<link rel="stylesheet" href="css/ket.css">
-
-</head>
-
-<body>
-
-
-	<div id="loader" class="fh5co-loader"></div>
-	<!-- SPLASHSCREEN -->
-	<div id="splashscreen">
-		<div class="splashscreen-bg"></div>
-		<div class="tengah">
-			<p>The Wedding Of</p>
-			<h1 style="font-size:80px;color:#c1a771;margin-top:-30px;">Moza &amp; Tian </h1>
-			<p style="margin-top:30px;">Kepada Yth.<br>
-			<p id="to"></p>
-			<a href="#" onclick="return OpenInvitation();">
-				<button class="btn-depan btn-4 btn-sep-depan icon-send popup1_open" data-popup-ordinal="0"
-					id="open_92089009">BUKA</button>
-			</a>
-		</div>
-	</div>
-
-	<!-- END SPLASHSCREEN -->
-
-	<!-- ============== MUSIK =============== -->
-	<audio loop="true" src="musik/m2.mp3" id="audio"></audio>
-	<!-- ============== MUSIK =============== -->
-
-	<div style="display: none;" id="page"><a href="#"
-			class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>
-		<div id="fh5co-offcanvas"></div>
-		<header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="0.5"
-			style="background-position: -25px -25px;">
-			<div id="fh5co-header">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center">
-							<div class="display-t">
-								<div class="display-tc animate-box fadeIn animated-fast" data-animate-effect="fadeIn">
-									<div style="color:#c1a771;margin-top:250px;">
-
-										<!-- <p>The Wedding Of</p> -->
-<br>
-<br>
-<br>
-										<h1 style="margin-top:-40px">
-											Moza &amp; Tian
-										</h1>
-										<p><span> 30 - 03 - 2026</span></p>
-										<p>
-											<a href="#fh5co-couple" class="icon-scroll"></a>
-										</p>
-									</div>
-									<div style="clear:both">
-										<br>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-
-		<div id="fh5co-couple" style="background-color:#443627; min-height:0px;">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center animate-box fadeInUp animated-fast">
-						<h1 style="color:#c1a771;font-size:50px">Hallo!</h1>
-						<p><i style="white-space:pre-line;">Assalamu'alaikum warahmatullahi wabarakatuh
-								Izinkan kami mengundang sekaligus mengharapkan doa restu dari bapak/ibu dan
-								rekan-rekan dalam acara pernikahan kami</i>
-						</p>
-					</div>
-				</div>
-				<div class="couple-wrap animate-box fadeInUp animated-fast">
-					<div class="couple-half">
-						<div class="groom"> <img src="img/Moza.jpg?nocache=1440" alt="groom" class="img-responsive">
-						</div>
-						<div class="desc-groom">
-							<h3 style="color:#c1a771;">
-								Moza Hesmita Adler</h3>
-							<!-- untuk deskripsi mempelai -->
-							<p>
-								<i style="font-size:12px;">Putri dari :</i>
-								<br>
-								Bapak Sony Adler &amp; Ibu OHimelda (Almh)
-							</p>
-						</div>
-					</div>
-					<p class="heart text-center"><i class="icon-heart2" style="color:#221b17;"></i></p>
-					<div class="couple-half">
-						<div class="bride"> <img src="img/Tian.jpg?nocache=1440" alt="groom" class="img-responsive">
-						</div>
-						<div class="desc-bride">
-							<h3 style="color:#c1a771;">
-								Agustian Tito</h3>
-							<!-- untuk deskripsi mempelai -->
-							<p><i style="font-size:12px;">Putra dari :</i>
-								<br>
-								Bapak Syafrizal &amp; Ibu Eva Nandira
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12" style="text-align:center;font-size:12px;">
-					<br><i style="white-space:pre-line;">''
-						Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari
-						jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya
-						diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar
-						terdapat tanda-tanda bagi kaum yang berfikir.
-						''
-						QS Ar-Rum : 21</i>
-				</div>
-			</div>
-		</div>
-
-
-		<!-- ============== PHP GET DATA TANGGAL =============== -->
-		<!-- ============== PHP GET DATA TANGGAL =============== -->
-		<div id="fh5co-event" class="fh5co-bg paralax-acara" style="background-color:#c1a771; min-height:0px;">
-			<div class="overlay"></div>
-			<div class="container">
-				<!-- 
+      <!-- ============== PHP GET DATA TANGGAL =============== -->
+      <!-- ============== PHP GET DATA TANGGAL =============== -->
+      <div
+        id="fh5co-event"
+        class="fh5co-bg paralax-acara"
+        style="background-color: #c1a771; min-height: 0px"
+      >
+        <div class="overlay"></div>
+        <div class="container">
+          <!-- 
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 text-center animate-box"> 
 				<h2 style="color:#fff;font-size:30px">Wedding Events</h2> 
 			</div>
 		</div>-->
-				<div class="row">
-					<div class="display-t">
-						<div class="display-tc">
-							<div class="col-md-10 col-md-offset-1">
+          <div class="row">
+            <div class="display-t">
+              <div class="display-tc">
+                <div class="col-md-10 col-md-offset-1">
+                  <div
+                    class="col-md-6 col-sm-6 text-center"
+                    style="margin-bottom: 10px"
+                  >
+                    <div class="event-wrap animate-box fadeInUp animated-fast">
+                      <h3>Akad</h3>
+                      <div class="event-col">
+                        <i class="icon-clock"></i>
+                        <span> 13.00 Siang </span>
+                      </div>
+                      <div class="event-col">
+                        <i class="icon-calendar"></i>
+                        <span>Jum'at, 6 Maret 2026</span>
+                      </div>
+                      <p>
+                        <label style="font-weight: normal; font-size: 22px">
+                          KUA Payakumbuh Barat</label
+                        >
+                        <br />
+                        Jl. Soekarno - Hatta, Bulakan Balai Kandih, Kec.
+                        Payakumbuh Bar., Kota Payakumbuh, Sumatera Barat 26223
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 col-sm-6 text-center"
+                    style="margin-bottom: 10px"
+                  >
+                    <div class="event-wrap animate-box fadeInUp animated-fast">
+                      <h3>Resepsi</h3>
+                      <div class="event-col">
+                        <i class="icon-clock"></i> <span> 10.00 - 14.00 </span>
+                      </div>
+                      <div class="event-col">
+                        <i class="icon-calendar"></i>
+                        <span>Senin, 30 Maret 2026</span>
+                      </div>
+                      <p>
+                        <label style="font-weight: normal; font-size: 22px">
+                          Kediaman Mempelai Pria
+                        </label>
+                        <br />
+                        Kelurahan Nunang Daya Bangun RT 002 / RW 005
+                      </p>
+                    </div>
+                  </div>
 
-
-								<div class="col-md-6 col-sm-6 text-center" style="margin-bottom:10px;">
-									<div class="event-wrap animate-box fadeInUp animated-fast">
-										<h3>Akad</h3>
-										<div class="event-col">
-											<i class="icon-clock"></i>
-											<span>
-												80.00 Pagi </span>
-										</div>
-										<div class="event-col"> <i class="icon-calendar"></i> <span>Jum'at, 6 Maret 2026</span> </div>
-										<p>
-											<label style="font-weight:normal; font-size:22px;">
-												KUA Payakumbuh Barat</label>
-											<br>
-											Jl. Soekarno - Hatta, Bulakan Balai Kandih, Kec. Payakumbuh Bar., Kota Payakumbuh, Sumatera Barat 26223
-										</p>
-									</div>
-								</div>
-								<div class="col-md-6 col-sm-6 text-center" style="margin-bottom:10px;">
-									<div class="event-wrap animate-box fadeInUp animated-fast">
-										<h3>Resepsi</h3>
-										<div class="event-col">
-											<i class="icon-clock"></i> <span>
-												10.00 - 14.00 </span>
-										</div>
-										<div class="event-col"> <i class="icon-calendar"></i> <span>Senin, 30 Maret 2026</span> </div>
-										<p>
-											<label style="font-weight:normal; font-size:22px;">
-												Kediaman Mempelai Pria </label>
-											<br>
-											Kelurahan Nunang Daya Bangun RT 002 / RW 005
-										</p>
-									</div>
-								</div>
-
-
-								<!-- <div class="col-md-8 col-md-offset-2 text-center animate-box fadeInUp animated-fast">
+                  <!-- <div class="col-md-8 col-md-offset-2 text-center animate-box fadeInUp animated-fast">
 									<a href="https://youtu.be/Ev-Rgy8HabA" target="_blank"
 										class="streaming mdc-button mdc-button--raised">
 										<i class="material-icons mdc-button__icon">play_arrow</i>
 										LIVE STREAMING
 									</a>
 								</div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+      <div id="fh5co-couple-story " class="fh5co-section-brown">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box fadeInUp animated-fast"
+            >
+              <h1 style="color: #c1a771; margin-top: 30px">Ucapan & Doa</h1>
+              <p>Berikan ucapan manis dan doa restu untuk kedua mempelai</p>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-md-6 col-md-offset-3 animate-box fadeInUp animated-fast"
+            >
+              <form
+                method="POST"
+                action="https://script.google.com/macros/s/AKfycbwcj4jXOCZRzBOTM2LPGJqqXB9rOmpexhi4Rw-u9tcrcOPqhJoNBYpFJ-a-_48URfkDew/exec"
+                target="hidden_iframe"
+                onsubmit="submitted = true"
+                style="
+                  background: #f8f8f8;
+                  padding: 30px;
+                  border-radius: 10px;
+                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <input name="tanggal" type="hidden" id="currentDate" />
 
-		<div id="fh5co-couple-story">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box fadeInUp animated-fast">
-						<h1 style="color:#c1a771;">Ucapan</h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 col-md-offset-0">
+                <div class="form-group">
+                  <label for="nama">Nama</label>
+                  <input
+                    name="nama"
+                    type="text"
+                    class="form-control"
+                    placeholder="Nama Anda"
+                    required
+                  />
+                </div>
 
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="fh5co-gallery" class="fh5co-section-brown">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box fadeInUp animated-fast">
-						<h1 style="color:#c1a771;">Gallery</h1>
-					</div>
-				</div>
-				<div class="row row-bottom-padded-md">
-					<div class="col-md-12">
-						<ul id="fh5co-gallery-list">
-							<!-- GET DATA -->
-							<!-- GET DATA -->
-							<li class="one-third animate-box fadeIn animated-fast" data-animate-effect="fadeIn"
-								style="background-image: url(img/album1.jpg);">
-								<a href="img/album1.jpg" data-lightbox="roadtrip">
-									<div class="case-studies-summary"> <span></span>
-										<h2></h2>
-									</div>
-								</a>
-							</li>
-							<!-- CLOSE DATA -->
-							<!-- GET DATA -->
-							<li class="one-third animate-box fadeIn animated-fast" data-animate-effect="fadeIn"
-								style="background-image: url(img/album2.jpg);">
-								<a href="img/album2.jpg" data-lightbox="roadtrip">
-									<div class="case-studies-summary"> <span></span>
-										<h2></h2>
-									</div>
-								</a>
-							</li>
-							<!-- CLOSE DATA -->
-							<!-- GET DATA -->
-							<li class="one-third animate-box fadeIn animated-fast" data-animate-effect="fadeIn"
-								style="background-image: url(img/album3.jpg);">
-								<a href="img/album3.jpg" data-lightbox="roadtrip">
-									<div class="case-studies-summary"> <span></span>
-										<h2></h2>
-									</div>
-								</a>
-							</li>
-							<!-- CLOSE DATA -->
-							<!-- GET DATA -->
-							<li class="one-third animate-box fadeIn animated-fast" data-animate-effect="fadeIn"
-								style="background-image: url(img/album4.jpg);">
-								<a href="img/album4.jpg" data-lightbox="roadtrip">
-									<div class="case-studies-summary"> <span></span>
-										<h2></h2>
-									</div>
-								</a>
-							</li>
-							<!-- CLOSE DATA -->
-							<!-- GET DATA -->
-							<li class="one-third animate-box fadeIn animated-fast" data-animate-effect="fadeIn"
-								style="background-image: url(img/album5.jpg);">
-								<a href="img/album5.jpg" data-lightbox="roadtrip">
-									<div class="case-studies-summary"> <span></span>
-										<h2></h2>
-									</div>
-								</a>
-							</li>
-							<!-- CLOSE DATA -->
-							<!-- GET DATA -->
-							<li class="one-third animate-box fadeIn animated-fast" data-animate-effect="fadeIn"
-								style="background-image: url(img/album6.jpg);">
-								<a href="img/album6.jpg" data-lightbox="roadtrip">
-									<div class="case-studies-summary"> <span></span>
-										<h2></h2>
-									</div>
-								</a>
-							</li>
-							<!-- CLOSE DATA -->
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+                <div class="form-group">
+                  <label for="ucapan">Ucapan</label>
+                  <textarea
+                    name="ucapan"
+                    class="form-control"
+                    rows="4"
+                    placeholder="Tulis ucapan..."
+                    required
+                  ></textarea>
+                </div>
 
-		<div id="fh5co-maps" class="fh5co-bg scrolltomap" style="background-color:#c1a771;">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center animate-box  fadeInUp animated-fast">
-						<h1 class="color-coklat" style="margin-top:30px;">Find Us</h1>
+                <div class="text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    style="background: #c1a771; border: none"
+                  >
+                    Kirim Ucapan
+                  </button>
+                </div>
+              </form>
+              <iframe
+                name="hidden_iframe"
+                id="hidden_iframe"
+                style="display: none"
+                onload="
+                  if (submitted) {
+                    alert('Terima kasih! Ucapan Anda berhasil terkirim.');
+                    window.location.reload();
+                  }
+                "
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
 
-						<p style="color:#c1a771;">
-							Kediaman Mempelai Pria <br>
-							Kelurahan Nunang Daya Bangun RT 002 / RW 005</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="display-t">
-						<div class="display-tc">
-							<div class="col-md-10 col-md-offset-1">
-								<div style="text-align:center;">
-									<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-									<style>
-										@media (max-width: 575.98px) {
-											.maps iframe {
-												width: 100%;
-												height: 350px;
-											}
-										}
+      <div id="fh5co-gallery" class="fh5co-section-brown">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box fadeInUp animated-fast"
+            >
+              <h1 style="color: #c1a771">Gallery</h1>
+            </div>
+          </div>
+          <div class="row row-bottom-padded-md">
+            <div class="col-md-12">
+              <ul id="fh5co-gallery-list">
+                <!-- GET DATA -->
+                <!-- GET DATA -->
+                <li
+                  class="one-third animate-box fadeIn animated-fast"
+                  data-animate-effect="fadeIn"
+                  style="background-image: url(img/album1.jpg)"
+                >
+                  <a href="img/album1.jpg" data-lightbox="roadtrip">
+                    <div class="case-studies-summary">
+                      <span></span>
+                      <h2></h2>
+                    </div>
+                  </a>
+                </li>
+                <!-- CLOSE DATA -->
+                <!-- GET DATA -->
+                <li
+                  class="one-third animate-box fadeIn animated-fast"
+                  data-animate-effect="fadeIn"
+                  style="background-image: url(img/album2.jpg)"
+                >
+                  <a href="img/album2.jpg" data-lightbox="roadtrip">
+                    <div class="case-studies-summary">
+                      <span></span>
+                      <h2></h2>
+                    </div>
+                  </a>
+                </li>
+                <!-- CLOSE DATA -->
+                <!-- GET DATA -->
+                <li
+                  class="one-third animate-box fadeIn animated-fast"
+                  data-animate-effect="fadeIn"
+                  style="background-image: url(img/album3.jpg)"
+                >
+                  <a href="img/album3.jpg" data-lightbox="roadtrip">
+                    <div class="case-studies-summary">
+                      <span></span>
+                      <h2></h2>
+                    </div>
+                  </a>
+                </li>
+                <!-- CLOSE DATA -->
+                <!-- GET DATA -->
+                <li
+                  class="one-third animate-box fadeIn animated-fast"
+                  data-animate-effect="fadeIn"
+                  style="background-image: url(img/album4.jpg)"
+                >
+                  <a href="img/album4.jpg" data-lightbox="roadtrip">
+                    <div class="case-studies-summary">
+                      <span></span>
+                      <h2></h2>
+                    </div>
+                  </a>
+                </li>
+                <!-- CLOSE DATA -->
+                <!-- GET DATA -->
+                <li
+                  class="one-third animate-box fadeIn animated-fast"
+                  data-animate-effect="fadeIn"
+                  style="background-image: url(img/album5.jpg)"
+                >
+                  <a href="img/album5.jpg" data-lightbox="roadtrip">
+                    <div class="case-studies-summary">
+                      <span></span>
+                      <h2></h2>
+                    </div>
+                  </a>
+                </li>
+                <!-- CLOSE DATA -->
+                <!-- GET DATA -->
+                <li
+                  class="one-third animate-box fadeIn animated-fast"
+                  data-animate-effect="fadeIn"
+                  style="background-image: url(img/album6.jpg)"
+                >
+                  <a href="img/album6.jpg" data-lightbox="roadtrip">
+                    <div class="case-studies-summary">
+                      <span></span>
+                      <h2></h2>
+                    </div>
+                  </a>
+                </li>
+                <!-- CLOSE DATA -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
-										@media (min-width: 576px) {
-											.maps iframe {
-												width: 100%;
-												height: 350px;
-											}
-										}
+      <div
+        id="fh5co-maps"
+        class="fh5co-bg scrolltomap"
+        style="background-color: #c1a771"
+      >
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-8 col-md-offset-2 text-center animate-box fadeInUp animated-fast"
+            >
+              <h1 class="color-coklat" style="margin-top: 30px">Find Us</h1>
 
-										@media (min-width: 768px) {
-											.maps iframe {
-												width: 100%;
-												height: 450px;
-											}
-										}
+              <p style="color: #221b17">
+                Kediaman Mempelai Pria <br />
+                Kelurahan Nunang Daya Bangun RT 002 / RW 005
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="display-t">
+              <div class="display-tc">
+                <div class="col-md-10 col-md-offset-1">
+                  <div style="text-align: center">
+                    <meta
+                      name="viewport"
+                      content="initial-scale=1.0, user-scalable=no"
+                    />
+                    <style>
+                      @media (max-width: 575.98px) {
+                        .maps iframe {
+                          width: 100%;
+                          height: 350px;
+                        }
+                      }
 
-										@media (min-width: 992px) {
-											.maps iframe {
-												width: 100%;
-												height: 500px;
-											}
-										}
-									</style>
-									<div style="margin-bottom:50px;" id="maps">
-										<iframe width="100%" height="450px" frameborder="0" style="border:0"
-											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.786658059327!2d100.63402827496456!3d-0.22826139976949095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2ab5d220262fed%3A0x19ac1e3a95b1ecc8!2sKantor%20Lurah%20Nunang%20Daya%20Bangun!5e0!3m2!1sen!2sid!4v1774288883706!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-										</iframe>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                      @media (min-width: 576px) {
+                        .maps iframe {
+                          width: 100%;
+                          height: 350px;
+                        }
+                      }
 
+                      @media (min-width: 768px) {
+                        .maps iframe {
+                          width: 100%;
+                          height: 450px;
+                        }
+                      }
 
-		<footer>
-			<p> &copy; Copyright 2026, <a href="">Moza & Tian</a> With Love
-			</p>
-		</footer>
+                      @media (min-width: 992px) {
+                        .maps iframe {
+                          width: 100%;
+                          height: 500px;
+                        }
+                      }
+                    </style>
+                    <div style="margin-bottom: 50px" id="maps">
+                      <iframe
+                        width="100%"
+                        height="450px"
+                        frameborder="0"
+                        style="border: 0"
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d838.7493443220972!2d100.63450670755343!3d-0.22792293533738134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMTMnNDAuNCJTIDEwMMKwMzgnMDUuMyJF!5e0!3m2!1sen!2sid!4v1774436702281!5m2!1sen!2sid"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                      >
+                      </iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div
+        id="fh5co-rekening"
+        class="fh5co-section-gray"
+        style="padding: 7em 0; background: #221b17"
+      >
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box"
+            >
+              <h1 style="color: #c1a771; margin-top: 30px">Wedding Gift</h1>
+              <p>
+                Tanpa mengurangi rasa hormat, bagi bapak/ibu yang ingin
+                memberikan tanda kasih untuk kami, dapat melalui nomor rekening
+                berikut:
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <div
+                class="bni-card animate-box"
+                style="
+                  background: linear-gradient(135deg, #005e6a 0%, #00a4b4 100%);
+                  border-radius: 20px;
+                  padding: 30px;
+                  color: white;
+                  position: relative;
+                  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+                  aspect-ratio: 1.6 / 1;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                  "
+                >
+                  <img
+                    src="img/BNI.png"
+                    alt="BNI Logo"
+                    style="height: 35px; filter: brightness(0) invert(1)"
+                  />
+                  <i
+                    class="fa fa-wifi"
+                    style="transform: rotate(90deg); font-size: 20px"
+                  ></i>
+                </div>
 
-		<!-- MUTE BUTTON -->
-		<a id="mute" href="#/" onclick="mute()" class="floatmute">
-			<i color="#fff" class="fa fa-volume-up my-float"></i>
-		</a>
-		<!-- MUTE BUTTON -->
+                <div style="margin-top: 20px">
+                  <p
+                    style="
+                      letter-spacing: 3px;
+                      font-size: 24px;
+                      margin-bottom: 5px;
+                      font-weight: 600;
+                    "
+                    id="acc-num"
+                  >
+                    1988659983
+                  </p>
+                  <p style="font-size: 14px; opacity: 0.8; margin: 0">
+                    Nomor Rekening
+                  </p>
+                </div>
 
-	</div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                  "
+                >
+                  <div>
+                    <p
+                      style="
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        margin: 0;
+                        font-weight: 500;
+                      "
+                    >
+                      Moza Hasmita Adler
+                    </p>
+                  </div>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png"
+                    alt="Mastercard"
+                    style="height: 40px"
+                  />
+                </div>
+              </div>
 
-	<div class="gototop js-top">
-		<a href="#fh5co-header" class="js-gotop"><i class="icon-arrow-up"></i></a>
-	</div>
+              <div class="text-center" style="margin-top: 20px">
+                <button
+                  onclick="copyToClipboard('1988659983')"
+                  class="btn btn-sm"
+                  style="background: #c1a771; color: white; border-radius: 20px"
+                >
+                  <i class="fa fa-copy"></i> Salin Nomor Rekening
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-	<script>
-		const splashscreen = document.getElementById("splashscreen")
-		const page = document.getElementById("page")
+      <footer>
+        <p>&copy; Copyright 2026, <a href="">Moza & Tian</a> With Love</p>
+      </footer>
 
-		function OpenInvitation() {
-			splashscreen.style.display = "none"
-			page.style.display = "block"
-		}
-	</script>
+      <!-- MUTE BUTTON -->
+      <a id="mute" href="#/" onclick="mute()" class="floatmute">
+        <i color="#fff" class="fa fa-volume-up my-float"></i>
+      </a>
+      <!-- MUTE BUTTON -->
+    </div>
 
-	<script src="js/2.1.3-jquery.min.js"></script>
-	<script src="js/js-bootstrap.min.js"></script>
+    <div class="gototop js-top">
+      <a href="#fh5co-header" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
 
-	<!-- jQuery -->
-	<!-- <script src="js/jquery.min.js"></script> -->
+    <script>
+      const splashscreen = document.getElementById("splashscreen");
+      const page = document.getElementById("page");
+      const audio = document.getElementById("audio"); // Ambil elemen audio
 
-	<!-- jQuery Easing -->
-	<script src="js/js-jquery.easing.1.3.js"></script>
+      function OpenInvitation() {
+        splashscreen.style.display = "none";
+        page.style.display = "block";
 
+        // Memutar musik saat tombol diklik
+        audio.play().catch(function (error) {
+          console.log(
+            "Autoplay dicegah oleh browser, musik akan menyala setelah interaksi berikutnya.",
+          );
+        });
 
+        // Mengupdate ikon tombol mute menjadi 'volume-up'
+        let button = document.getElementById("mute");
+        button.innerHTML =
+          '<i color="#fff" class="fa fa-volume-up my-float"></i>';
+        localStorage.setItem("mute", 0);
 
-	<!-- JS AREA -->
-	<script src="js/moment-with-locales.js"></script>
+        return false; // Mencegah reload halaman jika menggunakan href="#"
+      }
+    </script>
 
-	<script src="js/lightbox.js"></script>
-	<!-- <script src="//cdn.jsdelivr.net/npm/less@3.13"></script> -->
-	<!-- Waypoints -->
-	<script src="js/js-jquery.waypoints.min.js"></script>
-	<!-- Carousel -->
-	<script src="js/js-owl.carousel.min.js"></script>
-	<!-- countTo -->
-	<script src="js/js-jquery.countTo.js"></script>
+    <script src="js/2.1.3-jquery.min.js"></script>
+    <script src="js/js-bootstrap.min.js"></script>
 
-	<!-- Stellar -->
-	<script src="js/js-jquery.stellar.min.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/js-jquery.magnific-popup.min.js"></script>
+    <!-- jQuery -->
+    <!-- <script src="js/jquery.min.js"></script> -->
 
-	<script src="js/js-simplyCountdown.js"></script>
-	<!-- Main -->
-	<script src="js/js-main.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/js-jquery.easing.1.3.js"></script>
 
-	<script src="js/js-index.js"></script>
+    <!-- JS AREA -->
+    <script src="js/moment-with-locales.js"></script>
 
-	<!-- VALIDASI DONASI -->
-	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/less@3.13"></script> -->
+    <!-- Waypoints -->
+    <script src="js/js-jquery.waypoints.min.js"></script>
+    <!-- Carousel -->
+    <script src="js/js-owl.carousel.min.js"></script>
+    <!-- countTo -->
+    <script src="js/js-jquery.countTo.js"></script>
 
-	<script src="js/jquery.popupoverlay.min.js"></script>
+    <!-- Stellar -->
+    <script src="js/js-jquery.stellar.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/js-jquery.magnific-popup.min.js"></script>
 
+    <script src="js/js-simplyCountdown.js"></script>
+    <!-- Main -->
+    <script src="js/js-main.js"></script>
 
-	<!--script mute-->
+    <script src="js/js-index.js"></script>
 
-	<script>
-		document.addEventListener("DOMContentLoaded", function (event) {
-			let audio = document.getElementById("audio");
-			let button = document.getElementById('mute');
-			if (+localStorage.getItem('mute')) {
-				audio.muted = true;
-				button.innerHTML = '<i color="#000" class="fa fa-volume-off my-float"></i>';
-				audio.pause()
-			} else {
-				audio.volume = 0.9;
-				audio.play()
-			}
-		})
+    <!-- VALIDASI DONASI -->
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
 
-		function mute() {
-			let audio = document.getElementById('audio');
-			let button = document.getElementById('mute');
-			let isMute = +localStorage.getItem('mute');
-			if (!isMute) {
-				audio.muted = true;
-				audio.pause()
-				button.innerHTML = '<i color="#000" class="fa fa-volume-off my-float"></i>';
-				localStorage.setItem('mute', 1);
-			} else {
-				audio.muted = false;
-				audio.volume = 0.9;
-				audio.play()
-				button.innerHTML = '<i color="#fff" class="fa fa-volume-up my-float"></i>';
-				localStorage.setItem('mute', 0);
+    <script src="js/jquery.popupoverlay.min.js"></script>
 
-			}
-		}
-	</script>
-	<script>
-		const queryString = window.location.search;
-		const urlParams = new URLSearchParams(queryString);
-		const to = urlParams.get('to');
-		document.getElementById("to").innerHTML = to;
-	</script>
+    <!--script mute-->
 
-	<!--end script mute-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        let audio = document.getElementById("audio");
+        let button = document.getElementById("mute");
+        if (+localStorage.getItem("mute")) {
+          audio.muted = true;
+          button.innerHTML =
+            '<i color="#000" class="fa fa-volume-off my-float"></i>';
+          audio.pause();
+        } else {
+          audio.volume = 0.9;
+          audio.play();
+        }
+      });
 
+      function mute() {
+        let audio = document.getElementById("audio");
+        let button = document.getElementById("mute");
+        let isMute = +localStorage.getItem("mute");
+        if (!isMute) {
+          audio.muted = true;
+          audio.pause();
+          button.innerHTML =
+            '<i color="#000" class="fa fa-volume-off my-float"></i>';
+          localStorage.setItem("mute", 1);
+        } else {
+          audio.muted = false;
+          audio.volume = 0.9;
+          audio.play();
+          button.innerHTML =
+            '<i color="#fff" class="fa fa-volume-up my-float"></i>';
+          localStorage.setItem("mute", 0);
+        }
+      }
+    </script>
 
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const to = urlParams.get("to");
+      document.getElementById("to").innerHTML = to;
+    </script>
 
-</body>
+    <script>
+      // Script untuk mengisi tanggal otomatis saat ini
+      document.addEventListener("DOMContentLoaded", function () {
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, "0");
+        const day = String(now.getDate()).padStart(2, "0");
+        const today = `${year}-${month}-${day}`;
+        document.getElementById("currentDate").value = today;
+      });
 
+      // Script untuk copy nomor rekening
+      function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
+          alert("Nomor rekening berhasil disalin!");
+        });
+      }
+    </script>
+
+    <script>
+      let submitted = false;
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const now = new Date();
+        const today = now.toISOString().split("T")[0];
+        if (document.getElementById("currentDate")) {
+          document.getElementById("currentDate").value = today;
+        }
+      });
+
+      function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
+          alert("Nomor rekening berhasil disalin!");
+        });
+      }
+    </script>
+
+    <!--end script mute-->
+  </body>
 </html>
